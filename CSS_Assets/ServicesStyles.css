@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  
+
+}
+
+body{
+    background-image: url("/ASSETS/Texture.jpg");
+    max-width: 1920px;
+    max-height:900px;
+   
+    
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 50px;
+    top: 0;
+    padding: 20px 40px;
+    align-items: center;
+    background-color:  hsl(0deg 0% 0% / 0.25);
+    z-index: 1000;
+    border-bottom: 0.2px solid #a9b56b; 
+    backdrop-filter: blur(16px);
+    mask-image: linear-gradient(to bottom 0% 50%, transparent 50% 100);
+    pointer-events: none;
+    
+}
+   
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px;
+    color: #fff;
+    
+}
+
+.nav-links a:hover {
+   transition: color 0.3s ease-in-out;
+   color: #4C956C ;
+}
+/* Services Section */
+
+.Sevices-container{
+    display: block;
+    margin-left: 20px;
+    margin-top: 100px;
+    top: 100px;
+    width: 400px;
+    border: #1d1d1d;
+    border-style: groove;
+    height: 500px;
+    background-color:  hsl(0deg 0% 0% / 0.25);
+    border-radius: 10px;
+    border-width: 0;
+    filter: drop-shadow( rgb(153, 153, 153) 1rem 2rem 10px)  ;
+
+}
+.card{
+    margin: 0 auto;
+    width:400px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: hsl(0deg 0%, 0%s/0.25);
+    padding: 20px;
+
+    z-index: -1;
+}
+.card::after:{
+ content: "";
+ width: 100%;
+ height: 100%;
+ color: rgb(179, 12, 12); 
+ position: absolute;
+ padding: 20px;
+
+ 
+
+}
+
+.servicesP{
+    font-family: "Libertinus serif", sans-serif;
+    font-weight: 800;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.LanguagesIcon{
+    display: flex;
+    
+}
+
+/*.html-Icon{
+    
+    position: relative;
+    margin-left: 60px;
+    left: 450px;
+    right: 200px;
+    bottom: 499px;
+    width: 100%;
+    height: 100%;
+    background-color:  hsl(0deg 0% 0% / 0.25);
+    border-radius: 10px;
+
+}
+
+.css-Icon{
+    position: relative;
+    left: 600px;
+    width: 100%;
+    bottom: 499px;
+    height: 100%;
+    background-color:  hsl(0deg 0% 0% / 0.25);
+    border-radius: 10px;
+
+}
+
+.java-Icon{
+    
+    
+  /*  top: 300px;
+    left: 60px;
+    width: 300px;
+    height: 200px;
+    background-color:  hsl(0deg 0% 0% / 0.25);
+    border-radius: 10px;
+
+}
+javaScript-Icon{
+
+    position: relative;
+    right: 400px;
+    left: 40px;
+    bottom: 300px;
+    width: 100%;
+    height:100%;
+    background-color:  hsl(0deg 0% 0% / 0.25);
+    border-radius: 10px;
+
+}*/
+
+
+.javaScript-Icon img {
+
+    
+   
+
+    .p:g election{
+    margin: 10px;
+    font-size: 20px;
+}    
+
+}
+.buttonContainer{
+    position: relative;
+    margin: 0 auto;
+    right: 550px;
+    bottom: 80px;
+    border: 0;
+
+    }
+
+
+
+.cta{
+ display: flex;
+ align-items: center;
+ margin: 0 auto;
+ justify-content: center;
+ width: 250px;
+ height: 50px;
+ box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+ margin-top: 2rem ;
+
+}
+
+
+
+.cta ::after{
+    text-decoration: none;
+    background-color: #e97415;
+    font-weight: 400;
+    font-size: 1rem;
+     box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+     transition: ease-in-out;
+     opacity: 0;
+}
+.cta:hover::after{
+    opacity: 1;
+}
+
+.icon-container{
+    display: flex; 
+    flex-direction: column-reverse;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: flex-start left;
+    justify-content: flex-start ;
+    align-items: flex-start left;
+    position: relative;
+    bottom: 500px;
+    left: 650px;
+    flex-basis: 0 19%;
+    
+    
+
+}
+
+
+.html-Icon, .javaScript-Icon, .css-Icon, .java-Icon, .adobe-Icon, .canva-Icon{
+    flex: 0 32%;
+    margin: 2% ;
+    filter: drop-shadow(  rgb(110, 110, 110) 1rem 2rem 20px);
+}
+
+
+ .Icon-p{
+    font-family: "Libertinus Sans", sans-serif ;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 50px;
+   
+    padding-right: 30px;
+    
+ }
+
+ .HTML {
+    width: 260px;
+    height: 155px;
+ }
+
+ .CSS  {
+    width: 260px;
+    height: 155px;
+
+ }
+  .JAVASCRIPT {
+    width: 260px;
+    height: 155px;
+
+ }
+
+ .CANVA{
+   width: 260px;
+   height: 155px;
+ }
+
+ .ADOBE{
+    width: 250px;
+    height: 200px;
+ }
+
+ .hero-text{
+    text-align: center;
+    font-size: 15px;
+ }

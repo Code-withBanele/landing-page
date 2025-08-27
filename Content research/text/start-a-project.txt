@@ -1,0 +1,14 @@
+
+Start-a-project.
+--------------------------------------------------------------------------------------
+A little about me
+I am a developer passionate about creating clean, modern web experiences with a conscience.
+I believe good design doesn’t just serve users, it also respects the world we live in.
+
+ That’s why I focus on building efficient, sustainable websites that are lightweight, fast, and environmentally mindful.
+
+I believe in technology that can support local makers, reduce waste and promote smarter consumption.
+
+Right now, I’m focused on practical learning and building real-world projects while experimenting with modern tools and exploring
+I am currently studying web development, sharpening my skills in both front-end and back-end tech. I thrive in learning by doing.
+I am constantly iterating and experimenting to bring meaningful digital ideas to life. When I’m not at the laptop, I’m usually outdoors, practising my surfing, reading, or thinking up new ways to blend tech, sustainability, and creativity.

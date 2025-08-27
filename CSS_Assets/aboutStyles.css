@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("/ASSETS/Texture.jpg");
+}
+
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 40px;
+    align-items: center;
+    background-color:  hsl(0deg 0% 0% / 0.25);
+    z-index: 1000;
+    border-bottom: 0.2px solid #a9b56b; 
+    backdrop-filter: blur(16px);
+    mask-image: linear-gradient(to bottom 0% 50%, transparent 50% 100);
+    pointer-events: none;
+    
+}
+    
+.navContainer {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}   
+
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+    padding-right: 20px;
+}
+    
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px;
+    color: #fff;
+    
+}
+
+.nav-links a:hover {
+   transition: color 0.3s ease-in-out;
+   background-image:  linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 30%, hsla(318, 79%, 79%, 1) 100%);
+}
+    
+
+.aboutContainer {
+    display: block;
+    align-items: center;
+    position: relative;
+    padding-left: 50px;
+    top: 200px;
+
+}
+
+.aboutContainer h2 {
+    margin-top: 64px;
+    font-family: "Libertinus Sans", Sans serif;
+    font-style: OBLIQUE;
+    font-size: 60px;
+
+    bottom: 260px;
+   
+}
+
+.aboutContainer p {
+    font-family: "Libertinus Sans", sans-serif;
+    font-size: 40px;
+    font-size: 20px;
+    padding: top 50px; 
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+ 
+    max-width: 800px;
+    font-weight: 600;
+    font-style: bold;
+    scroll-behavior: smooth;
+    backdrop-filter: blur(1px) sepia(20%);
+    
+}
+
+.SocialLinks {
+
+    display: flex;
+    margin: 0 auto;
+    padding-top:100px ;
+    width: 100%;
+    gap: 10rem;
+    position: relative;
+    bottom: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+
+button a{
+   filter: drop-shadow rgb(153, 153, 153) 4em 2em 20px; 
+   gap: 2rem;    
+
+}
+
+
+
+button a:hover{
+    color: antiquewhite;
+
+}
+
+.aboutImg {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 160px;
+
+    position: relative;
+    bottom:  700px;
+    left: 1400px;
+    float: left;
+
+}
