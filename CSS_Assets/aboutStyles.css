@@ -20,8 +20,7 @@ body{
     z-index: 1000;
     border-bottom: 0.2px solid #a9b56b; 
     backdrop-filter: blur(16px);
-    mask-image: linear-gradient(to bottom 0% 50%, transparent 50% 100);
-    pointer-events: none;
+    pointer-events: auto;
     
 }
     
@@ -50,7 +49,6 @@ body{
 
 .nav-links a {
     text-decoration: none;
-    font-weight: 500;
     padding: 15px;
     color: #fff;
     
@@ -60,10 +58,12 @@ body{
    transition: color 0.3s ease-in-out;
    background-image:  linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 30%, hsla(318, 79%, 79%, 1) 100%);
 }
+
+
+
     
 
 .aboutContainer {
-    display: block;
     align-items: center;
     position: relative;
     padding-left: 50px;
@@ -92,7 +92,7 @@ body{
  
     max-width: 800px;
     font-weight: 600;
-    font-style: bold;
+    font-weight: bold;
     scroll-behavior: smooth;
     backdrop-filter: blur(1px) sepia(20%);
     
@@ -106,36 +106,42 @@ body{
     width: 100%;
     gap: 10rem;
     position: relative;
-    bottom: 300px;
+    bottom: 150px;
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    pointer-events: auto;
+    transition: 3s ease-in;
 
 }
 
-button a{
+.SocialLinks{
    filter: drop-shadow rgb(153, 153, 153) 4em 2em 20px; 
    gap: 2rem;    
 
 }
 
+.SocialLinks a{
+    display: inline-block;
+    padding: 10px 15px;
+    pointer-events: auto;
+    color: #fff;
 
-
-button a:hover{
-    color: antiquewhite;
+}
+.SocialLinks a:hover{
+  transition: all 0.3s ease-in-out;
+   background-image:  linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 30%, hsla(318, 79%, 79%, 1) 100%);
 
 }
 
-.aboutImg {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin-top: 60px;
-    margin-left: 160px;
-
-    position: relative;
-    bottom:  700px;
-    left: 1400px;
-    float: left;
-
+img{
+   
+ 
 }
+
+.footer-text{
+    display: inline;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
