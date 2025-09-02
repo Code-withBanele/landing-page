@@ -32,7 +32,13 @@
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
+    flex-grow: 1;
     flex-wrap: wrap;
+}
+
+.cart + .logo {
+    height: 100px;
+    width: 100px;
 }
 
 .logo {
@@ -44,22 +50,20 @@
     box-shadow: #000, ;
 }
 
-.nav-links{
-     margin: 0 AUTO;
+.nav-links a{
      text-decoration: none;
-     color: #fff;
-     display: flex;
-     position: relative;
-     flex-direction: right 0 ;
+     color: #fff;      
      gap: 4rem;
-     font-family: "Libertinus Sans", sans-serif;
+
      font-size: 20px;
      transition: color 0.15s ease-in-out;
 
 }
 
+.
 
-a:hover {
+
+.nav-links :hover {
 
    color: #204b0c;
    
