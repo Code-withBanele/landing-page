@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("/ASSETS/Texture.jpg");
+    background-image: url("/ASSETS/bg/marek-pavlik-rr0HwwL52FQ-unsplash.jpg");
 }
 
 
@@ -31,13 +31,14 @@ body{
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
+    height: 80px;
     flex-wrap: wrap;
 }   
 
 
 .logo {
     font-family: 'Jaini', sans-serif;
-    font-size: 1.8rem;
+    font-size: 40px;
     font-weight: 800;
     color: #fff;
     cursor: pointer;
@@ -52,7 +53,7 @@ body{
     justify-content: center;
      text-decoration: none;
      color: #fff;      
-     font-size: 20px;
+     font-size: 25px;
      transition: color 0.15s ease-in-out;
 
 }
@@ -94,42 +95,66 @@ a:hover::before{
 }
 
 
-
     
 
 .aboutContainer {
     align-items: center;
     position: relative;
     padding-left: 50px;
-    top: 200px;
+    font-family: 'Jaini', sans-serif;
+    color: white;
 
 }
 
 .aboutContainer h2 {
-    margin-top: 64px;
-    font-family: 'Jaini', sans-serif;
+    margin-top: 20px;
     font-style: OBLIQUE;
     font-size: 60px;
-
+    justify-content: center;
     bottom: 260px;
    
 }
 
-.aboutContainer p {
-    font-family: 'Jaini', sans-serif;
-    font-size: 40px;
-    font-size: 20px;
-    padding: top 50px; 
+.aboutContainer p, .CTA-2 {
+    font-size: 35px;
+    line-height: 2;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 40px;
- 
     max-width: 800px;
-    font-weight: 600;
-    font-weight: bold;
+    font-weight: 200;
+    font-family: 'Monteserrat', sans-serif;
     scroll-behavior: smooth;
     backdrop-filter: blur(1px) sepia(20%);
     
+}
+.CTA-2{
+    font-family: 'Monteserrat', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0,3s ease;
+}
+
+.CTA-2:hover {
+    color: #204b0c;
+  
+}
+
+.CTA-2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;  
+    left: 0;
+    border-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+   
+}
+
+.CTA-2 a:hover::before{
+    transform: scaleX(1);
 }
 
 .SocialLinks {
@@ -140,17 +165,16 @@ a:hover::before{
     width: 100%;
     gap: 10rem;
     position: relative;
-    bottom: 150px;
+    bottom: 80px;
     align-items: center;
     justify-content: center;
     pointer-events: auto;
-    transition: 3s ease-in;
+    transition: all 0.3s ease-in-out;
 
 }
 
 .SocialLinks{
-   filter: drop-shadow rgb(153, 153, 153) 4em 2em 20px; 
-   gap: 2rem;    
+    gap: 4rem;    
 
 }
 
@@ -158,12 +182,11 @@ a:hover::before{
     display: inline-block;
     padding: 10px 15px;
     pointer-events: auto;
-    color: #fff;
 
 }
 .SocialLinks a:hover{
-  transition: all 0.3s ease-in-out;
-   background-image:  linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 30%, hsla(318, 79%, 79%, 1) 100%);
+    color: linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 30%, hsla(318, 79%, 79%, 1) 100%) ;
+
 
 }
 
@@ -174,4 +197,8 @@ a:hover::before{
     align-items: center;
     justify-content: center;
 }
+
+
+
+
 

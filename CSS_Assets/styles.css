@@ -34,22 +34,18 @@
     max-width: 1200px;
     width: 100%;
     flex-wrap: wrap;
+    height:80px;
 
 }
 
-.cart + .logo {
-    height: 100px;
-   
-}
 
 .logo {
     font-family: 'Jaini',sans-serif;
-    font-size: 1.8rem;
+    font-size: 40px;
     font-weight: 800;
     padding-right: 20px;
     color: #fff;
     cursor: pointer;
-    padding-right: 20px ;
 }
 
 .navWords{
@@ -60,7 +56,7 @@
     justify-content: center;
      text-decoration: none;
      color: #fff;      
-     font-size: 20px;
+     font-size: 25px;
      transition: color 0.15s ease-in-out;
 
 }
@@ -110,16 +106,22 @@ a:hover::before{
 .cta,
 .hero-cta {
     display: inline-block;
+    width: 300px;
+    height: 70px;
+    text-align: center;
     padding: 0.7rem 1.5rem;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 30px;
     color: #000;
-    box-shadow: hsla(182, 93%, 68%, 1);
+    box-shadow: 0 4px 6px rgbargba(169, 181 0.8);
+    box-shadow: 0 6px 8px rgba(169, 181 0.8);
+    box-shadow: 0 8px 10px rgba(169, 181 0.8);
+    box-shadow: 0 10px 12px rgba(169, 181 0.8);
     text-decoration: none;
     transition: background-color 0.3s;
     white-space: nowrap;
     background-color: #a9b56b;
-    opacity: 50%;
     border-style: inset;
     margin-left: auto;
 }
@@ -176,7 +178,7 @@ a:hover::before{
 }
 .hero-text h1 {
     font-family: 'Jaini',sans-serif;
-    font-size: 3rem;
+    font-size: 50px;
     line-height: 1.3;
     margin: 1rem 0;
     animation: twinkle 5000ms alternate infinite, fadeFromTransparent 5000ms;
@@ -193,35 +195,42 @@ a:hover::before{
 
 }
 
-.hero-text p {
-    font-family: 'Jaini', sans-serif;
-    font-size: 0.9rem;
-    color: #fff;
-}
 
 .hero-img img {
     max-width: 400px;
     border-radius: 10px;
     position: relative;
-    top: 150px;
+    margin: 0 auto;
+    align-items: center;
+    
   
+}
+
+.imageC{
+    background-color: #444840;
+    border-radius: 10%;
+    box-shadow: 0 20 10 #444840;
+
 }
 
  /*Did you know*/
 .funfact {
     position: relative;
-    top: 100px;
-    bottom: 300px;
-    margin-bottom: 1000px;
-
+    
     padding: 20px;
     max-width: 800px;
     text-align: center;
     background-color: hsl(0deg 0% 0% / 0.25);
     border-radius: 10px;
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #e1e1e1;
+    font-family: 'Merriweather',sans-serif;
+    font-weight:400;
+    font-size: 26px;
+    line-height: 2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(16px);
     pointer-events: auto;
     border: #a9b56b 2px solid;
@@ -229,8 +238,10 @@ a:hover::before{
 
 
 .service-strip p {
+    position: relative;
     padding-left: 100%;
     font-family: 'Courier New', Courier, monospace;
+    color: #fff;
     animation: scrollStrip 20s linear infinite;
 
 }
@@ -245,7 +256,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("/ASSETS/Texture.jpg");
+    background-image: url("/ASSETS/bg/marek-pavlik-rr0HwwL52FQ-unsplash.jpg");
     scroll-behavior: auto;
     overflow: auto;
 }
@@ -263,10 +274,10 @@ body {
   font-size: 2.25rem;
   font-weight: bold;
   letter-spacing: -0.02em;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+  background-color:rgba(0, 0, 0, 0.8);
   color: rgba(0, 0, 0, 0.7);
   position: relative;
-  bottom: 8rem;
+  bottom: 13.5rem;
 }
 
 .service-strip span {
@@ -341,16 +352,4 @@ body {
 }
 
 
-.aboutImg {
-    
-    height: 400px;
-    width: 400px;
-    margin-top: 60px;
-    margin-left: 100px;
-    position: relative;
-    bottom:  700px;
-    left: 800px;
-    float: left;
-
-}
 
