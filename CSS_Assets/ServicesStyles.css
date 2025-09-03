@@ -17,8 +17,8 @@ body{
 
 /* Navbar styles */
 .navbar {
-    display: flex;
     position: fixed;
+    display: flex;
     width: 100%;
     margin-bottom: 50px;
     top: 0;
@@ -28,9 +28,8 @@ body{
     z-index: 1000;
     border-bottom: 0.2px solid #a9b56b; 
     backdrop-filter: blur(16px);
-    mask-image: linear-gradient(to bottom 0% 50%, transparent 50% 100);
     pointer-events: auto;
-     height: 80px;
+
     overflow: hidden;
     
 }
@@ -47,6 +46,7 @@ body{
 }
 
 .logo {
+    font-family: 'Jaini',sans-serif;
     font-size: 1.8rem;
     font-weight: 800;
     color: #fff;
@@ -54,7 +54,9 @@ body{
     padding-right: 100px;
 }
 .navWords{
+    font-family: 'Jaini',sans-serif;
     position: relative;
+    margin-right: 20px;
     align-items: center;
     justify-content: center;
      text-decoration: none;
@@ -64,18 +66,16 @@ body{
 
 }
 
-.nav-links {
-    display: flex;
-    gap: 2rem;
+.nav-links{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      flex-grow: 1;
+      gap: 4rem;
 }
 
-.nav-links a {
-    text-decoration: none;
-    font-weight: 500;
-    padding: 15px;
-    color: #fff;
-    
-}
+
 
  .navWords:hover{
 
@@ -225,7 +225,6 @@ javaScript-Icon{
 
 .cta{
 position: relative;
-display: block;
  align-items: center;
  margin: 0 auto;
  justify-content: center;
