@@ -6,13 +6,13 @@
 
 body{
     display: flex;
-    background-image: url("/ASSETS/Texture.jpg");
+    background-image: url("/ASSETS/bg/marek-pavlik-rr0HwwL52FQ-unsplash.jpg");
 }
 
 
 .navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     padding: 20px 40px;
@@ -42,6 +42,7 @@ body{
     color: #fff;
     cursor: pointer;
     padding-right: 20px;
+    margin-right: 100px;
 }
     
 
@@ -56,6 +57,21 @@ body{
      font-size: 20px;
      transition: color 0.15s ease-in-out;
 
+}
+
+.nav-right{
+    font-family: 'Jaini',sans-serif;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;      
+    font-size: 20px;
+
+}
+.widget{
+    gap: 4rem;
+    margin-right: 20px;
 }
 
 .nav-links{
@@ -95,14 +111,19 @@ a:hover::before{
 }
 
 
+label p{
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+
 
 
 .form{
     padding-left: 42;
     margin-left: 4; 
-
-    padding-top: 100px ;
-    margin-top: 50;
+    margin-top: 200px;
 }
 
 fieldset{
@@ -121,11 +142,11 @@ label, p, input {
 
 }
 
-label,p{
+label,legend,p{
     
     margin-bottom: 10px;
     font-size: 23px;
-    font-family: "Jaini", sans-serif;
+    font-family: "Monteserrat", sans-serif;
     color: #fff;
 }
 
@@ -139,11 +160,11 @@ h1{
 label, p{
     display: block;
     margin-bottom: 15px;
-    font-size: ;
+    cursor: pointer;
 }
 
 .slip{
-    display: flex;
+    display: block;
     position: relative;
     margin: 0 auto;
     align-items: center;
@@ -152,39 +173,23 @@ label, p{
     bottom: 1400px;
     height: 1431px;
     width: 648px;
-    background-color: #ECEEDF;
+    background-color: #ffffff;
     border-radius: 50px;
-    box-shadow: 0 20px 20px rgba(0,0,0,0.15);
-    box-shadow:  0 30px 40px rgba(0, 0, 0, 0.15) ;
-    box-shadow:  0 40px 50px rgba(0, 0, 0, 0.15) ;
-    box-shadow:  0 50px 60px rgba(0, 0, 0, 0.15) ;
-    box-shadow:  0 70px 80px rgba(0, 0, 0, 0.15) ;
-    box-shadow:  0 90px 100px rgba(0, 0, 0, 0.15) ;
+    box-shadow: #ECEEDF 0 20px 20px;
+    box-shadow: #ECEEDF  0 30px 40px;
+    box-shadow: #ECEEDF  0 40px 50px;
+    box-shadow: #ECEEDF  0 50px 60px;
+    box-shadow: #ECEEDF  0 70px 80px;
+    box-shadow: #ECEEDF  0 90px 100px ;
+    overflow: hidden;
     
 }
 
-.slip::after{
-    content:"";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    border-radius: 5%;
-    box-shadow: 20px 20px rgba(0,0,0,0.15);
-    transition: opacity 0.3 ease-in-out;
 
-}
 
-.box:hover{
-    transform: scale (1.2, 1.2);
 
-}
-.box::after{
-    opacity:1;
-}
 
-.slip-text, p {
+.slip-text {
     font-family: "Jaini", sans-serif;
     font-size: 28px;
     color: black;
@@ -192,18 +197,92 @@ label, p{
 
 .slip-title{
     position: relative;
-    bottom: 480px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+    top: 50px;
+    font-size: 40px;
     border-radius: 20px;
     color: black;
 }
 
-.QButton{
+.slip-text h1{
+    font-size: 50px;
+}
+
+.email-section{
+    margin-top: 50px;}
+
+.QButton,.MButton{
     display: block;
     justify-content: center;
     margin: 0 auto;
-    width: 224px;
-    height: 40px;
-    
+    width: 360px;
+    height: 60px;
+    gap: 2rem;
+    border-radius: 10px;
+    background-color: #a9b56b;
+    box-shadow: #204b0c 0px 10px 20px;
+    transition: all 0.2s ease-in-out;
+
+}
+.QButton:hover,.MButton:hover{
+    background-color: #204b0c;
+    box-shadow: #204b0c 0px 15px 25px;
+    transform: translateY(-2px);
 }
 
+.MButton{
+    margin-top: 20px;
+}
 
+.QButton{
+
+}
+
+.usermail{
+    font-size: 20px;
+    font-family: "Jaini", sans-serif;
+    color: black;
+    margin: 0;
+}
+
+.usernameInput{
+    font-size: 20px;
+    font-family: "Jaini", sans-serif;
+    color: black;
+    margin: 0;
+}
+
+.usermailInput{
+    width: 360px;
+    border-radius: 10px ;
+    margin-bottom: 2rem;
+    box-shadow: #204b0c 0px 15px 25px;
+}
+
+.email-section{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 95px;
+}
+ul{
+    margin-left: 50px;
+    font-family: 'Jaini',sans-serif;
+    font-size: 27px;
+    font-weight: 200;
+    line-height: 2;
+}
+
+.footer-text{
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+    margin-top: 50px;
+}

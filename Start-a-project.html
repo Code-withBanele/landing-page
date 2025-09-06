@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="/CSS_Assets/Start-a-project.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
- <script src="script.js"></script>
-    <title>Start-A-Project</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS_Assets/Start-a-project.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <title>Start-A-Project</title>
 </head>
-
-    <header class="navbar">
-    <div class="logo">Banele.dev</div>
-    <div class="navContainer">
-        <nav class="nav-links">
-          <a class="navWords" href="./index.html" >HOME</a>
-         <a class="navWords"  href="./About.html" >ABOUT</a>
-          <a class="navWords"href="./Services.html">SERVICES</a>
-          <a class="navWords" href="./Start-a-project.html">Start-A-Project</a>
-        </nav>
-    </div>
-</header>
 <body>
-<div class="form">
+  <header class="navbar">
+  <div class="logo">Banele.dev</div>
+  <div class="navContainer">
+    <nav class="nav-links">
+      <a class="navWords" href="./index.html">HOME</a>
+      <a class="navWords" href="./About.html">ABOUT</a>
+      <a class="navWords" href="./Services.html">SERVICES</a>
+      <a class="navWords" href="./Start-a-project.html">Start-A-Project</a>
+
+    <div class="nav-right">
+    <span class="widget" id="navTime"></span>
+    <span class="widget" id="navLocation"></span>
+    <span class="widget" id="navWeather"></span>
+  </div>
+
+
+    </nav>
+  </div>
+</header>
+  <div class="form">
     <h1><span>Start A Project</span></h1>
-    <fieldset>
-    <label for=" design">1.Design
-        <p>Wether your fully prepared or just starting out, weve got your design needs coverd.</p>
-        <input type="radio">  I dont need a design</input></label>
-        <label><input type="radio">I need a logo</input></label>
-        <label><input type="radio">I need a design</input></label>
-         
-   
 
-    </label>
-    </fieldset>
-    <fieldset class="form-fields">
-    <label for="backend" class="choices">2. back-end
-        <p>Powerful reliable and built for perfomance, we handle all the setup for the behind the scenes tech, secure database integrations and features that keep your site running smoothly </p>
-       <label><input type="radio" name="back-end-development" value="back-end-development" data-price="Price varies"> Yes I need back-end development.</input></label>
-        <label><input type="radio"> No back-end needed</input></label>
-    </label>
-    </fieldset>
-    <fieldset class="form-fields">
-    <label for="front-end" class="choices">3. front-end
-        <p>Your websites visual experiance coded to perfection</p></label>
-       <label><input type="radio" name="2-d-animations" value="2-d-animations" data-price=""> Include 2d animations in(smooth and interactive effects)</input></label>
-        <label><input  type="radio" name="3-d-animations" value="3-d-animations" data-price=""> Include 3d animations(High impact and interactive visuals. )</input></label>       
-    </label>
-    </fieldset class="form-fields">
     <fieldset>
-    <label for="Discounts" class="choices"> 4.Materates 
-        <p>Because friends deserve better deals- returning clients or refferals get 10% off</p>
-        <input type="radio"> I am a returning customer/ we are buddies!</input>
-        
-    </label>
+      <legend>1. Design</legend>
+      <p class="title">Whether you’re fully prepared or just starting out, we’ve got your design needs covered.</p>
+      <label><input type="checkbox" data-name="No design" data-price="0"> I don’t need a design</label>
+      <label><input type="checkbox" data-name="Logo" data-price="1000"> I need a logo</label>
+      <label><input type="checkbox" data-name="Full Design" data-price="6000"> Full design (wireframes + prototype)</label>
     </fieldset>
+
+    <fieldset class="form-fields">
+      <legend>2. Back-end</legend>
+      <p class="title">Powerful, reliable, and built for performance. Secure database integrations and smooth features.</p>
+      <label><input type="checkbox" data-name="CMS" data-price="6000"> Yes, I need back-end development</label>
+      <label><input type="checkbox" data-name="No CMS" data-price="0"> No back-end needed</label>
+    </fieldset>
+
+    <fieldset class="form-fields">
+      <legend>3. Front-end</legend>
+      <p class="title">Your website’s visual experience coded to perfection.</p>
+      <label><input type="checkbox" data-name="2D animations" data-price="2000"> Include 2D animations</label>
+      <label><input type="checkbox" data-name="3D animations" data-price="3000"> Include 3D animations</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Mates Rates</legend>
+      <p class="title">Because friends deserve better deals — returning clients or referrals get 10% off.</p>
+      <label><input type="checkbox" data-name="10% discount" data-price="discount"> Apply 10% discount</label>
+    </fieldset>
+
     <div class="slip">
-        <div class="slip-title">
-            <H1 class="slip-text">*****BANELE.DEV******</H1>
-            <h3>date:x/x/x</h2>
-            <H1 class="slip-text">**********************</H1>
-
-
-            <p class="slip-text" id="selected-item">The selected items are:</p>
-            <p  class="slip-text" id="selected-price">The total cost is: R</p>
-            <button class="QButton" id="QButton" >Request-A-Quote</button>
+      <div class="slip-title">
+        <h1 class="slip-text">*************BANELE.DEV************</h1>
+        <h3 id="slip-date">Date: --/--/--</h3>
+        <h1 class="slip-text">**************************************</h1>
+         </div>
+         <section class="SELECTED-ITEMS">
+        <p class="slip-text">The selected items are:</p>
+        <ul id="slip-items"></ul>
+        <p class="slip-text">The total cost is: <span id="slip-total">R0</span></p>
+         
+        <p class="slip-text">Thank you for choosing Banele.dev! I look forward to bringing your project to life.</p>
+        <div class="email-section">
+          <label class="usernameInput" for="name">Enter Your name:</label>
+          <input class="usermailInput" type="text" id="userName" placeholder="Enter your name" required>
+          <label class="usermail" for="user-mail">Enter Your Email:</label>
+          <input class="usermailInput" type="email" id="userMail" placeholder="Enter your email" required>
         </div>
 
-
+        <button class="QButton" id="QButton">Request-A-Quote</button>
+        <button class="MButton" id="MButton">Book Meeting</button>
+        </section>
     </div>
-
-
-
-</div>  
+  </div>
 </body>
+<footer><h1 class="footer-text">all rights reserved</h1></footer>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "L5mm9nhYsTb21CJv1",
+      });
+   })();
+</script>
+
 </html>
+
