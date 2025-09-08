@@ -71,7 +71,7 @@ body{
 
  .navWords:hover{
 
-   color: #204b0c;
+   color: #CB997E;
    
    
 }
@@ -126,10 +126,20 @@ a:hover::before{
     backdrop-filter: blur(5px) sepia(50%);
     
 }
+
 .CTA-2{
     color: #fff;
     pointer-events: auto;
+    transition: all 0.2s ease-in;
+    height: 30px;
+
 }
+
+.CTA-2:hover{
+    color: #204b0c;
+    transform: translateX(-10);
+}
+
 
 
 

@@ -3,13 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const slipDate = document.getElementById("slip-date");
   const slipItems = document.getElementById("slip-items");
   const slipTotal = document.getElementById("slip-total");
+    const checkboxes = document.querySelectorAll("input[type='checkbox']");
 
   // --- Form + Buttons ---
-  const QButton = document.getElementById("QButton");
-  const MButton = document.getElementById("MButton");
-  const userNameInput = document.getElementById("userName");
-  const userEmailInput = document.getElementById("userMail");
-  const checkboxes = document.querySelectorAll("input[type='checkbox']");
+
 
   let currentItems = [];
   let currentTotal = 0;
@@ -61,12 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   setInterval(updateSlip, 1000);
 
-  // --- Request Quote Button ---
-// ✅ Get form elements
-const nameInput = document.getElementById("userName");
-const emailInput = document.getElementById("userMail");
-const quoteBtn = document.getElementById("QButton");
-const meetingBtn = document.getElementById("MButton");
 
 // ✅ Your EmailJS IDs (replace with your real ones)
 const SERVICE_ID = "service_bdnwc5q";   // from EmailJS dashboard
@@ -77,41 +68,37 @@ const PUBLIC_KEY = "L5mm9nhYsTb21CJv1"; // from EmailJS dashboard
 (function () {
   emailjs.init(PUBLIC_KEY);
 })();
+  const MButton = document.getElementById("MButton");
+  const userName = document.getElementById("userName");
+  const userEmail = document.getElementById("userMail");
 
-// ✅ Common function to send email
-function sendEmail(templateParams, button) {
-  button.disabled = true;
-  button.textContent = "Sending...";
+const btn = document.getElementById('QButton');
+ btn.addEventListener('click', function(event) {
+   event.preventDefault();
 
-  emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
-    .then(() => {
-      alert("✅ Your request was sent successfully!");
-    })
-    .catch((error) => {
-      console.error("EmailJS Error:", error);
-      alert("❌ Failed to send. Please try again later.");
-    })
-    .finally(() => {
-      button.disabled = false;
-      button.textContent = button.id === "QButton" ? "Request-A-Quote" : "Book Meeting";
-    });
-}
+   btn.value = 'Sending...';
 
-// ✅ Quote request
-quoteBtn.addEventListener("click", () => {
-  if (!nameInput.value || !emailInput.value) {
-    alert("⚠️ Please enter your name and email.");
-    return;
-  }
 
-  const templateParams = {
-    from_name: nameInput.value,
-    from_email: emailInput.value,
-    message: "Client is requesting a quote."
+
+     const params = {
+    user_name: userName.value,
+    user_email: userEmail.value,
+    items: slipItems.textContent,
+    total: slipTotal.textContent,
+    date: slipDate.textContent,
   };
 
-  sendEmail(templateParams, quoteBtn);
+   emailjs.send(SERVICE_ID, TEMPLATE_ID, params,this)
+    .then(() => {
+      btn.textContent = 'Request-A-Quote';
+      alert('Sent!');
+    }, (err) => {
+      btn.textContent = 'Request-A-Quote';
+      alert(JSON.stringify(err));
+    });
 });
+
+
 
 
   // --- Book Meeting Button ---
