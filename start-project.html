@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Start your web development project with Banele Mjayezi">
+  <title>Start A Project - Banele.dev</title>
+
+  <!-- Page Title -->
+  <title>Start-A-Project | Full-Stack Web Development | Banele.dev</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Start your custom web project with Banele Mjayezi. Choose design, back-end, front-end options, and get a personalized quote or meeting booked.">
+  <meta name="keywords" content="start a project, web development quote, full-stack development, HTML, CSS, JavaScript, Java, design services, Cape Town developer, Banele.dev">
+  <meta name="author" content="Banele Mjayezi">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Start-A-Project | Banele.dev">
+  <meta property="og:description" content="Start your custom web project with Banele Mjayezi. Choose your design, back-end, and front-end preferences and request a quote.">
+  <meta property="og:image" content="./ASSETS/icons/noun-game-dev-2289595.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://banele.dev/Start-a-project.html">
+  <link rel="stylesheet" href="./CSS_Assets/stylesheet.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Banele.dev</a>
+      
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="start-project.html" class="nav-link active">Start-A-Project</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container section">
+    <h1 class="page-title text-center mb-large">Start Your Project</h1>
+
+    <div class="project-grid">
+      <!-- Service Selection Form -->
+      <div class="glass-card">
+        <h2 class="section-title">Select Services</h2>
+        
+        <form id="projectForm" novalidate>
+          <!-- Design Services -->
+          <div class="service-category">
+            <h3 class="category-title">Design</h3>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="logo-basic" data-price="1750">
+                <span>Logo Design - Basic - R1750</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="logo-premium" data-price="3500">
+                <span>Logo Design - Premium - R3500</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="mockup" data-price="500">
+                <span>Mockup Design - R500</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Back-end Services -->
+          <div class="service-category">
+            <h3 class="category-title">Back-end</h3>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="database" data-price="2500">
+                <span>Database Setup - R2500</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="api" data-price="3000">
+                <span>API Development - R3000</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Front-end Services -->
+          <div class="service-category">
+            <h3 class="category-title">Front-end</h3>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="landing-page" data-price="2000">
+                <span>Landing Page - R2000</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="multipage" data-price="5000">
+                <span>Multi-page Website - R5000</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="ecommerce" data-price="8000">
+                <span>E-Commerce Site - R8000</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Mates Rates -->
+          <div class="service-category">
+            <h3 class="category-title">Mates Rates</h3>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="service" value="mates-rates" data-price="-1">
+                <span>Friend/Family Discount</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Quote Slip -->
+      <div class="glass-card quote-slip">
+        <h2 class="section-title">Your Quote</h2>
+        
+        <div class="quote-details">
+          <div class="form-group">
+            <label for="userName" class="form-label">Name</label>
+            <input 
+              type="text" 
+              id="userName" 
+              class="form-input" 
+              placeholder="Enter your name"
+              required
+              minlength="2"
+              maxlength="100"
+            >
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="userEmail" class="form-label">Email</label>
+            <input 
+              type="email" 
+              id="userEmail" 
+              class="form-input" 
+              placeholder="Enter your email"
+              required
+              maxlength="255"
+            >
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="selected-services">
+            <h3 class="services-title">Selected Services:</h3>
+            <ul id="selectedServicesList" class="services-list">
+              <li class="no-services">No services selected yet</li>
+            </ul>
+          </div>
+
+          <div class="total-section">
+            <div class="total-row">
+              <span class="total-label">Subtotal:</span>
+              <span class="total-value" id="subtotal">R0.00</span>
+            </div>
+            <div class="total-row discount-row" id="discountRow" style="display: none;">
+              <span class="total-label">Mates Rates (20% off):</span>
+              <span class="total-value discount" id="discount">-R0.00</span>
+            </div>
+            <div class="total-row final-total">
+              <span class="total-label">Total:</span>
+              <span class="total-value" id="totalAmount">R0.00</span>
+            </div>
+          </div>
+
+          <div class="quote-actions">
+            <button type="button" id="sendQuoteBtn" class="btn btn-cta w-full">Send Request</button>
+            <a href="contact.html" class="btn btn-secondary w-full">Contact Us</a>
+          </div>
+        </div>
+
+        <div id="quoteSuccess" class="form-success" style="display: none;">
+          <p>✓ Quote request sent! We'll be in touch soon.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src=".app.js"></script>
+</body>
+</html

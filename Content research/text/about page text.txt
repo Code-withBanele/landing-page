@@ -1,4 +1,5 @@
-
+HERO TEXT
+------------------------------------------------
 As a skilled developer with a focus on HTML, CSS
 JavaScript and Java, I offer complete, end-to-end
 solutions for building websites. From crafting clean
@@ -20,3 +21,29 @@ modern websites that work seamlessly.
 1. Clean, responsive websites built with HTML, CSS, and Java.
 2. From design to code—fast, functional, and modern.
 3. Custom web solutions tailored to your vision.
+
+
+
+------------------------------------------------------
+PORGRAMMNG LANGUAGES DISCRIPTIVE TEXT
+-----------------------------------------------------
+ – Structure meets style With CSS
+I design responsive, visually appealing
+layouts that look great on any device.
+
+ – The engine of interactivity.
+   I use JavaScript to add dynamic features,
+   enhance user experience and bring-
+   websites to life.
+ – Powering logic and functionality.
+    I use Java to build interactive features,
+    handle backend processes, and ensure-
+
+    smooth, efficient performance.
+– Crafting professional, scalable
+                  graphics and illustrations for logos, icons,
+                  and branding materials.
+
+ Designing quick, creative visuals
+                  for social media, marketing, and presentations
+                  with a polished, modern touch.

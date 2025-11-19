@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Banele Mjayezi - Get in touch for web development services">
+  <title>Contact - Banele.dev</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Banele.dev</a>
+      
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="start-project.html" class="nav-link">Start-A-Project</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container section">
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="glass-card">
+        <h1 class="page-title">Let's Connect</h1>
+        <p class="section-text mb-medium">
+          Have a question or want to work together? Drop me a message!
+        </p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              class="form-input" 
+              required
+              minlength="2"
+              maxlength="100"
+            >
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              required
+              maxlength="255"
+            >
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-textarea" 
+              rows="6" 
+              required
+              minlength="10"
+              maxlength="1000"
+            ></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-cta w-full">Send Message</button>
+        </form>
+
+        <div id="formSuccess" class="form-success" style="display: none;">
+          <p>✓ Message sent successfully! I'll get back to you soon.</p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="glass-card">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span>banele@bxplore.net</span>
+          </div>
+
+          <div class="contact-item">
+            <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>Cape Town, South Africa</span>
+          </div>
+        </div>
+
+        <div class="quote-box">
+          <p class="quote-text">
+            "Let's build something amazing together"
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

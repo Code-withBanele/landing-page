@@ -1,6 +1,6 @@
 
 Start-a-project.
---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 A little about me
 I am a developer passionate about creating clean, modern web experiences with a conscience.
 I believe good design doesn’t just serve users, it also respects the world we live in.

@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(updateSlip, 1000);
 
 
-// ✅ Your EmailJS IDs (replace with your real ones)
+//  Your EmailJS IDs and Key
 const SERVICE_ID = "service_bdnwc5q";   // from EmailJS dashboard
 const TEMPLATE_ID = "template_1e8u7rd"; // from EmailJS dashboard
 const PUBLIC_KEY = "L5mm9nhYsTb21CJv1"; // from EmailJS dashboard
 
-// ✅ Initialize EmailJS
+//   Initialize EmailJS
 (function () {
   emailjs.init(PUBLIC_KEY);
 })();
@@ -144,6 +144,12 @@ const btn = document.getElementById('QButton');
     locationEl.textContent = "Location not supported";
   }
 });
+
+
+   function toggleDrawer() {
+      document.getElementById("drawer").classList.toggle("open");
+   };
+
 
 
 

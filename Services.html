@@ -1,117 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS_Assets/ServicesStyles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
-    <title>Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web development services - HTML, CSS, JavaScript, Java, Adobe Creative Suite, and Canva">
+  <title>Services - Banele.dev</title>
+
+   <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore Banele Mjayezi's web development services. From responsive HTML, CSS, and JavaScript websites to interactive web applications and creative design solutions.">
+    <meta name="keywords" content="web development services, full-stack developer, HTML, CSS, JavaScript, Java, responsive web design, Cape Town web developer, UI/UX design, Illustrator, Canva, Banele.dev">
+    <meta name="author" content="Banele Mjayezi">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Banele.dev Services | Full-Stack Web Development">
+    <meta property="og:description" content="Professional web development services by Banele Mjayezi. Custom websites, interactive applications, and modern design solutions.">
+    <meta property="og:image" content="./ASSETS/sta-je-html.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://banele.dev/Services.html">
+
+
+  <link rel="stylesheet" href="./CSS_Assets/stylesheet.css">
+  <link rel="icon" href="/favicon.ico">
 </head>
-      <header class="navbar">
-    <div class="logo">Banele.dev</div>
-  <div class="navContainer">
-    <nav class="nav-links">
-      <a class="navWords" href="./index.html">HOME</a>
-      <a class="navWords" href="./About.html">ABOUT</a>
-      <a class="navWords" href="./Services.html">SERVICES</a>
-      <a class="navWords" href="./Start-a-project.html">Start-A-Project</a>
-
-    <div class="nav-right">
-    <span class="widget" id="nav-time"></span>
-    <span class="widget" id="nav-location"></span>
-    <span class="widget" id="nav-weather"></span>
-  </div>
-
-
-    </nav>
-  </div>
-</header>
 <body>
-    <div class="itemsContainer">
-<div class="Services-container">
-<p>
-As a skilled developer with a focus on HTML, CSS,
-JavaScript and Java, I offer complete, end-to-end
-solutions for building websites. From crafting clean,
-user-friendly designs to coding both the structure
-and functionality, I create custom sites that align
-perfectly with your vision.
-Whether it’s structuring pages with HTML, styling
-them with CSS, or building interactive features using
-JavaScript, I handle every aspect of the process to
-deliver a functional and visually appealing web
-experience tailored to your needs.
-If you’re a small business, creative team, or
-independent designer looking for a reliable technical
-partner, I can turn your ideas into fully functional,
-modern websites that work seamlessly.<br><br>
- <strong>I offer you:</strong>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Banele.dev</a>
+      
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
 
-<br><br>
-1. Clean, responsive websites built with HTML, CSS, and JavaScript.<br>
-2. From design to code—fast, functional, and modern.<br>
-3. Custom web solutions tailored to your vision.</p>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="start-project.html" class="nav-link">Start-A-Project</a>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Main Content -->
+  <main class="container section">
+    <!-- Services Intro -->
+    <div class="glass-card max-w-6xl mx-auto mb-large">
+      <h1 class="page-title">Services</h1>
+      
+      <p class="section-text">
+        As a skilled developer with a focus on HTML, CSS, JavaScript and Java, I offer complete, end-to-end solutions for building websites. From crafting clean, user-friendly designs to coding both the structure and functionality, I create custom sites that align perfectly with your vision. Whether it's structuring pages with HTML, styling them with CSS, or building interactive features using JavaScript, I handle every aspect of the process to deliver a functional and visually appealing web experience tailored to your needs. If you're a small business, creative team, or independent designer looking for a reliable technical partner, I can turn your ideas into fully functional, modern websites that work seamlessly.
+      </p>
 
-<img src="./ASSETS/noun-arrow-right-331054-removebg-preview.png" class="arrow1">
-<div class="button"><a   href="./Start-a-project.html" class="cta">
-    Start-A-Project</a></div>
+      <div class="offerings-section">
+        <p class="offerings-title">I offer you:</p>
+        <ul class="offerings-list">
+          <li>Clean, responsive websites built with HTML, CSS, and JavaScript.</li>
+          <li>From design to code—fast, functional, and modern.</li>
+          <li>Custom web solutions tailored to your vision.</li>
+        </ul>
+      </div>
 
-   
-    
+      <div class="cta-center">
+        <a href="start-project.html" class="btn btn-cta">Start-A-Project</a>
+      </div>
+    </div>
 
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        id="serviceSearch" 
+        class="search-input" 
+        placeholder="Search services..."
+        aria-label="Search services"
+      >
+      <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+    </div>
 
-</div>
+    <!-- Tech Stack Title -->
+    <h2 class="section-title text-center mb-medium">Tech Stack</h2>
 
+    <!-- Services Grid with Accordion -->
+    <div class="services-grid" id="servicesGrid">
+      <!-- HTML -->
+      <div class="service-card" data-service-title="HTML" data-service-description="Semantic, accessible HTML5 markup for solid web foundations.">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg class="icon-large icon-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+          </div>
+          <h3 class="service-title accordion-trigger">HTML</h3>
+          <div class="service-description accordion-content">
+            <p>Semantic, accessible HTML5 markup for solid web foundations.</p>
+          </div>
+          <a href="start-project.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
 
-<div class="icon-container">
-<div class="html-Icon">
-    <img src="./ASSETS/sta-je-html.jpg" class="HTML">
-    <p class="Icon-p"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> – The backbone of every website.<br>
-       I use HTML to create clean, structured<br>
-       pages that form the foundation of your<br>
-       site’s-content and layout</p>
-</div>
-<div class="css-Icon">
-<img src="./ASSETS/rsz_1sta-je-css.png" class="CSS">
-<p class="Icon-p"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> – Structure meets style With CSS,<br>
-                  I design responsive, visually appealing<br>
-                layouts that look great on any device.</p>
-</div>
-<div class="javaScript-Icon">
-<img src="./ASSETS/sta-je-javascript.jpg" class="JAVASCRIPT">
-<p class="Icon-p"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript">JAVASCRIPT</a> – The engine of interactivity.<br>
-   I use JavaScript to add dynamic features,<br>
-   enhance user experience and bring-<br>
-   websites to life.</p>
-</div>   
-<div class="java-Icon">
-    <img src="./ASSETS/Adobe Express 2025-08-14 09.24.42.png" class="JAVA">
-<p class="Icon-p"><a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/jjdev/Java-overview.html">Java</a> – Powering logic and functionality.<br>
-    I use Java to build interactive features,<br>
-    handle backend processes, and ensure-<br>
-    smooth, efficient performance.</p>
-</div>
-<div class="adobe-Icon">
-    <img src="./ASSETS/adobe2.jpg" class="ADOBE">
-<p class="Icon-p"><a href="https://www.adobe.com/za/products/illustrator/features.html">Illustrator </a>– Crafting professional, scalable<br>
-                  graphics and illustrations for logos, icons,<br>
-                  and branding materials.</p>
-</div>
-<div class="canva-Icon">
-    <img src="./ASSETS/swello-eD1E6Rqyeag-unsplash.jpg" class="CANVA">
-<p class="Icon-p"><a href="https://www.canva.com/visual-suite/">Canva</a> – Designing quick, creative visuals<br>
-                  for social media, marketing, and presentations-<br>
-                  with a polished, modern touch.</p>
-</div>
+      <!-- CSS -->
+      <div class="service-card" data-service-title="CSS" data-service-description="Modern, responsive styling with CSS3 and animations.">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg class="icon-large icon-peachy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </div>
+          <h3 class="service-title accordion-trigger">CSS</h3>
+          <div class="service-description accordion-content">
+            <p>Modern, responsive styling with CSS3 and animations.</p>
+          </div>
+          <a href="start-project.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
 
+      <!-- JavaScript -->
+      <div class="service-card" data-service-title="JavaScript" data-service-description="Interactive features and dynamic functionality.">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg class="icon-large icon-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="service-title accordion-trigger">JavaScript</h3>
+          <div class="service-description accordion-content">
+            <p>Interactive features and dynamic functionality.</p>
+          </div>
+          <a href="start-project.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
 
-</div>
-</div>
-    
+      <!-- Java -->
+      <div class="service-card" data-service-title="Java" data-service-description="Robust backend solutions and enterprise applications.">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg class="icon-large icon-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+            </svg>
+          </div>
+          <h3 class="service-title accordion-trigger">Java</h3>
+          <div class="service-description accordion-content">
+            <p>Robust backend solutions and enterprise applications.</p>
+          </div>
+          <a href="start-project.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Adobe Creative Suite -->
+      <div class="service-card" data-service-title="Adobe Creative Suite" data-service-description="Professional design and visual content creation.">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg class="icon-large icon-peachy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </div>
+          <h3 class="service-title accordion-trigger">Adobe Creative Suite</h3>
+          <div class="service-description accordion-content">
+            <p>Professional design and visual content creation.</p>
+          </div>
+          <a href="start-project.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Canva -->
+      <div class="service-card" data-service-title="Canva" data-service-description="Quick, effective design solutions for modern branding.">
+        <div class="service-card-inner">
+          <div class="service-icon">
+            <svg class="icon-large icon-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="service-title accordion-trigger">Canva</h3>
+          <div class="service-description accordion-content">
+            <p>Quick, effective design solutions for modern branding.</p>
+          </div>
+          <a href="start-project.html" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- No Results Message -->
+    <div id="noResults" class="no-results" style="display: none;">
+      <p>No services found matching your search.</p>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
 </body>
-<footer><h1 class="hero-text">all rights reserved</h1></footer>
 </html>
+
